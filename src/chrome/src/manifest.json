@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+
+  "name": "Nightwatch",
+  "description": "A chrome extension for monitoring our toilet availability.",
+  "version": "1.0",
+
+  "icons": {
+    "16": "images/toilet-available-16.png",
+    "48": "images/toilet-available-48.png",
+    "128": "images/toilet-available-128.png"
+  },
+
+  "browser_action": {
+    "default_icon": "images/toilet-available-19.png",
+    "default_title": "toilet is available now!"
+  },
+
+  "background": {
+    "scripts": ["javascripts/background.js"]
+  },
+
+  "permissions": [
+    "notifications",
+    "background",
+    "*://*/*"
+  ]
+}
